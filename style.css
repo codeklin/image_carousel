@@ -9,6 +9,7 @@ body {
   background: palevioletred;
   display: flex;
   justify-content: center;
+  font-family: 'poppins';
 
 }
 
@@ -30,7 +31,6 @@ img {
 /* Next & previous buttons */
 .prev,
 .next {
-  /*display: none;*/
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -62,15 +62,21 @@ img {
 
 
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
+/* Number text (4/5 etc) */
+.img_numb {
+  color: #1a0834;
   font-size: 1rem;
-  padding: 8px 12px;
+  padding-top: 10px;
   position: absolute;
   top: 0;
+  font-weight: bolder;
 }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
 @keyframes fade {
   from {
@@ -88,6 +94,6 @@ img {
   .prev,
   .next,
   .text {
-    font-size: 11px
+    font-size: 1rem;
   }
 }
